@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flash Arcade</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+
+<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#111;">
+
+  <div id="game"></div>
+
+  <script>
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    document.getElementById("game").appendChild(player);
+
+    player.load("game1.swf");
+  </script>
+
+</body>
+</html>
